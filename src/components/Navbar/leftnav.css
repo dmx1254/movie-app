@@ -1,0 +1,115 @@
+.leftnav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.title{
+    flex: 0.3;
+    margin: 0 10px;
+    padding: 7px 10px;
+    color: #f4f4f4;
+    background: #0a0a23;
+    font-weight: 700;
+    font-style: italic;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+ul{
+    flex: 0.7;
+    display: flex;
+    margin:  0 40px;
+}
+li{
+    list-style-type: none;
+    margin: 0 20px;
+}
+.leftnav a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+/* .leftnav .navactive::after{
+    position: absolute;
+    content: "";
+    height: 5px;
+    width: 100%;
+    top: 100%;
+    left: 0%;
+    background: #0a0a23;
+    transform: translate(50, 50);
+    transform-origin: left;
+    animation: afterAnim 0.5s linear ease;
+} */
+
+/* .leftnav a:hover::after{
+    position: absolute;
+    content: "";
+    height: 5px;
+    width: 100%;
+    top: 100%;
+    left: 0%;
+    background: #0a0a23;
+    transform: translate(0%, 50%);
+    transform-origin: left;
+    
+} */
+.movies__cat{
+    position: relative;
+}
+.movies__cat .movies__cat-category{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    background: #0a0a23;
+    left: -100%;
+    top: 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: none;
+}
+.movies__cat-category{
+    z-index: 50;
+}
+.movies__cat-category li{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.movies__cat-category li a{
+    color: #f4f4f4;
+    margin-left: 10px;
+}
+.movies__cat .fa-chevron-right{
+    position: absolute;
+    color: #f4f4f4;
+    font-size: 1rem;
+    top: 17%;
+    left: 102%;
+    transition: .3s linear;
+}
+.movies__cat .fa-chevron-right:hover + ul,.movies__cat-category:hover{
+    display: block;
+    
+}
+.movies__cat .fa-chevron-right:hover{
+    transform: rotate(90deg);
+}
+@media (max-width: 930px){
+    .title{
+        margin: 0px;
+    }
+    ul{
+        margin: 0 10px;
+    }
+    li{
+        margin: 0 10px;
+    }
+}
+@media (max-width: 760px){
+    ul{
+        display: none;
+    }
+}

@@ -1,0 +1,13 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    position: sticky;
+    top: 0;
+}
+@media (max-width: 1042){
+    .navbar{
+        justify-content: space-around;
+    }
+}

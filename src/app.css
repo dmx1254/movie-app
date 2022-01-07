@@ -1,0 +1,13 @@
+.app{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav{
+    flex: 0.2;
+    background: rgba(0, 0, 0, 0.7);
+}
+main{
+    flex: 0.8;
+    margin: 10px auto;
+}

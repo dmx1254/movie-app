@@ -1,0 +1,64 @@
+.rightnav{
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+}
+.rightnav__first{
+    display: flex;
+    margin-right: 20px;
+}
+
+.rightnav__first p{
+    margin-right: 20px;
+}
+.rightnav__first p i {
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+
+.rightnav__first p span a{
+    text-transform: uppercase;
+    color: #f4f4f4;
+    background: #0a0a23; 
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.rightnav__second{
+    margin-right: 10px;
+}
+.rightnav__second p{
+    margin-right: 10px;
+}
+
+.rightnav__second > p > i {
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+.rightnav__second .right__nav_search{
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    display: none;
+}
+.right__nav_search i{
+    font-size: 2.5rem;
+    color: #f4f4f4;
+
+}
+
+@media (max-width: 760px){
+    .rightnav__first{
+        display: none;
+    }
+    .rightnav__second .right__nav_search{
+        display: block;
+    }
+}
+
+@media (max-width: 315px){
+    .rightnav__second .right__nav_search{
+        right: 80px;
+    }
+}
